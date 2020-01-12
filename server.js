@@ -4,7 +4,7 @@ var path = require('path');
 var fs = require('fs');
 var app = express();
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8100;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -40,7 +40,7 @@ app.get(/^(.+)$/, function(request, response) {
     catch(e){
         console.log('error by fs: ', e);
         response.type('html');
-        response.sendFile('404.html', {root: path.join(__dirname, './public/pages')});
+        response.sendFile('404.html', {root: path.join(__dirname, folder)});
     }
 })
 

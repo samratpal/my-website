@@ -10,8 +10,21 @@
 </head>
 <body>
     <h1>Welcome to video chat</h1>
-    <a href="/">Go To Home</a><br>
+    <a href="/">Go To Home</a><br><br>
     <button id="startBtn">Start Chatting</button>
+    <div id="chatBox" class="chatBox">
+        <label>Your ID:</label><br/>
+        <textarea id="yourId"></textarea><br/>
+        <label>Other ID:</label><br/>
+        <textarea id="otherId"></textarea>
+        <button id="connect">connect</button><br/>
+
+        <label>Enter Message:</label><br/>
+        <textarea id="yourMessage"></textarea>
+        <button id="send">send</button>
+        <pre id="messages"></pre>
+    </div>
+
     <script type="text/javascript" src="js/videoChat.js"></script>
 </body>
 </html>
