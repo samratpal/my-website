@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/samratpal/my-website/issues"
   },
-  "homepage": "https://github.com/samratpal/my-website#readme"
+  "homepage": "https://github.com/samratpal/my-website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
